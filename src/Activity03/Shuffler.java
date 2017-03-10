@@ -51,6 +51,28 @@ public class Shuffler {
 	 */
 	public static void perfectShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+                int count = 52;
+                int[]firstHalf = new int[26];
+                int[]secondHalf = new int[26];
+                for(int x=0; x<count; x++){
+                    int a = 0;
+                    int b = 0;
+                    if (a%2==0){
+                        values[a+b]= firstHalf[a];
+                        a++;
+                    }
+                    if (b%2!=0){
+                        values[b+a] = secondHalf[b];
+                        b++;
+                    }
+                    if (a%2!=0){
+                        a++;
+                    }
+                    if (b%2==0){
+                        b++;
+                    }
+                }
+                        
 	}
 
 	/**
